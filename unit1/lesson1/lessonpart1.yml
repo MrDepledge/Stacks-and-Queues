@@ -11,7 +11,7 @@ content: >
   element from the front.&#x20;
 
 
-  n contrast, a stack operates on a Last-In-First-Out (LIFO) principle, where
+  In contrast, a stack operates on a Last-In-First-Out (LIFO) principle, where
   elements are added and removed from the top. The primary operations for a
   stack are push, which adds an element to the top, and pop, which removes the
   top element.
