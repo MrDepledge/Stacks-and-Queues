@@ -7,12 +7,56 @@ contacts:
   - displayName: Adam Depledge
     pictureUrl: https://avatars.githubusercontent.com/u/144779538?v=4
     homePageUrl: https://github.com/MrDepledge
+files:
+  - path: course1/unit1/lesson1/lessonpart1/stacks_and_queues.py
+    content: |
+      class Queue:
+          def __init__(self):
+              self.items = []
+
+          def enqueue(self, item):
+              self.items.append(item)
+
+          def dequeue(self):
+              if not self.is_empty():
+                  return self.items.pop(0)
+              return None
+
+          def is_empty(self):
+              return len(self.items) == 0
+
+          def __len__(self):
+              return len(self.items)
+
+          def __repr__(self):
+              return f"Queue({self.items})"
+
+      print("Queue class ready.")
+
+      class Stack:
+          def __init__(self):
+              self.items = []
+
+          def push(self, item):
+              self.items.append(item)
+
+          def pop(self):
+              if not self.is_empty():
+                  return self.items.pop()
+              return None
+
+          def peek(self):
+              return None if self.is_empty() else self.items[-1]
+
+          def is_empty(self):
+              return len(self.items) == 0
+
+          def __len__(self):
+              return len(self.items)
+              
+          def __repr__(self):
+              return f"Stack({self.items})"
+
+      print("Stack class ready.")
 units:
-  - id: unit1
-    title: Unit 1
-    lessons:
-      - id: lesson1
-        title: Lesson 1
-        lessonParts:
-          - id: lessonpart1
-            title: Page 1
+  - unit1/index.yml

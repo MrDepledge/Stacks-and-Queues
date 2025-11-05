@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart1
+title: Page 1
+content: >
+  Queues and stacks are fundamental data structures in computer science.&#x20;
+
+
+  A queue operates on a First-In-First-Out (FIFO) principle, where elements are
+  added to the back and removed from the front. Basic operations include
+  enqueue, which adds an element to the back, and dequeue, which removes an
+  element from the front.&#x20;
+
+
+  n contrast, a stack operates on a Last-In-First-Out (LIFO) principle, where
+  elements are added and removed from the top. The primary operations for a
+  stack are push, which adds an element to the top, and pop, which removes the
+  top element.
+showEditor: true
+editors:
+  - course1/unit1/lesson1/lessonpart1/stacks_and_queues.py
